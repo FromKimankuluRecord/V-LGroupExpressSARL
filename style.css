@@ -14,10 +14,17 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* --- Lignes 15-20 actuelles de votre fichier --- */
 html {
     scroll-behavior: smooth;
 }
 
+/* 📍 COLLEZ LE CORRECTIF EXACTEMENT ICI : */
+section {
+    scroll-margin-top: 75px; 
+}
+
+/* --- La suite de votre fichier actuel --- */
 body {
     color: var(--text-color);
     line-height: 1.6;
