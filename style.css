@@ -27,12 +27,6 @@ body {
     line-height: 1.6;
 }
 
-
-/* 📍 COLLEZ LE CORRECTIF EXACTEMENT ICI : */
-section {
-    scroll-margin-top: 75px; 
-}
-
 /* --- La suite de votre fichier actuel --- */
 body {
     color: var(--text-color);
@@ -416,32 +410,53 @@ body {
     font-size: 0.9rem;
 }
 
-/* ==========================================================
-   COLLEZ LE BLOC EXACTEMENT ICI, TOUT EN BAS DE VOTRE FICHIER 
-   ========================================================== */
 @media(max-width: 800px) {
 
-    /* 📍 COLLEZ LE CORRECTIF DU TITRE EXACTEMENT ICI : */
+    /* --- CORRECTIF DU TITRE (DÉGAGÉ DU MENU) --- */
     .hero-section {
-        padding-top: 120px !important; /* Crée l'espace nécessaire sous le menu */
+        padding-top: 120px !important; /* Décale l'accueil vers le bas */
         height: auto !important;
         min-height: 100vh;
     }
 
     .hero-content h1 {
-        font-size: 2rem !important;    /* Redimensionne le titre pour le smartphone */
+        font-size: 2rem !important;    /* Redimensionne le titre pour mobile */
         line-height: 1.3;
     }
-    /* ------------------------------------------------ */
 
+    /* Force le bouton "burger" (les 3 barres) à apparaître */
     .menu-toggle {
         display: block !important;
+    }
+
+    /* Configure la boîte du menu vertical mobile (caché par défaut) */
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        background-color: var(--primary-color);
+        padding: 20px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+    
+    /* Déploie le menu vertical au clic */
+    .nav-links.active {
+        display: flex !important;
     }
 
     .nav-links li {
         width: 100%;
         text-align: center;
         margin: 10px 0;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 10px 0;
     }
 
     /* Aligne vos onglets de services verticalement sur mobile */
@@ -477,5 +492,4 @@ body {
     .menu-toggle.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-} 
-/* <-- Attention à ne pas oublier cette dernière accolade, elle ferme le @media */
+}
