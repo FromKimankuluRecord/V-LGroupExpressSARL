@@ -87,7 +87,7 @@
         <div class="about-wrapper">
                 <div class="about-text">
                     <h3>Qui sommes-nous ?</h3>
-                    <p><strong>V&L GroupExpress</strong>est une entreprise specialisée dans dans le sourcing international, la conciergerie d'achats et la gestion logistique de bout en bout. Forts de notre présence stratégique sur les axes mondiaux majeurs (Paris, Hong Kong, Casablanca), nous connectons les entreprises aux meilleurs réseaux d'approvisionnement.</p>
+                    <p><strong>V&L GroupExpress</strong> est une entreprise specialisée dans dans le sourcing international, la conciergerie d'achats et la gestion logistique de bout en bout. Forts de notre présence stratégique sur les axes mondiaux majeurs (Paris, Hong Kong, Casablanca), nous connectons les entreprises aux meilleurs réseaux d'approvisionnement.</p>
 
                 </div>
 
@@ -108,26 +108,27 @@
     </section>
 
 
-<!-- Section Formulaire de Contact / Devis -->
- <section id="contact" class="contact-section">
+<section id="contact" class="contact-section">
     <div class="container">
         <h2 class="section-title">Discutons de votre projet</h2>
         <div class="contact-wrapper">
             <div class="contact-info">
                 <h3>Contactez-nous</h3>
-                <p><i class="fa-solid fa-envelope"></i> contact@global-conciergerie.com</p>
-                <p><i class="fa-solid fa-phone"></i> +33 (0)1 23 45 89</p>
-                <p><i class="fa-solid fa-location-dot"></i> Paris / Hong-Kong / Casablanca</p>
+                <p><i class="fa-solid fa-envelope"></i> vlgroupexpress@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +212 (0)773 851 603</p>
+                <p><i class="fa-solid fa-location-dot"></i> Brazzavile / Kinshasa / Casablanca</p>
             </div>
-            <form  id="quote-form" class="contact-form">
+            
+            <!-- Un seul formulaire propre relié à votre Formspree -->
+            <form id="quote-form" class="contact-form" action="https://formspree.io/f/xyeyqgkq" method="POST">
                 <div class="form-group">
-                    <input type="text" id="name" placeholder="Votre nom complet" required>
+                    <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="email" placeholder="Votre adresse email" required>
+                    <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
                 </div>
                 <div class="form-group">
-                    <select id="service-needed" required>
+                    <select id="service-needed" name="service" required>
                         <option value="" disabled selected>Service Principal Souhaité</option>
                         <option value="conciergerie">Conciergerie d'Achat</option>
                         <option value="sourcing">Sourcing Fournisseur</option>
@@ -135,19 +136,20 @@
                         <option value="transport">Transport International</option>
                     </select>
                 </div>
-                   <form class="contact-form" id="contactForm" action="https://formspree.io/f/mrpgvvdp" method="POST">
-                    <textarea id="message" rows="5" placeholder="Détaillez vos besoins (Origine, Destination, Type de marchandise... )" required></textarea>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Détaillez vos besoins (Origine, Destination, Type de marchandise... )" required></textarea>
                 </div>
                 <button type="submit" class="btn-submit">Envoyer la demande</button>
                 <div id="form-feedback" class="form-feedback"></div>
-
             </form>
+
         </div>
     </div>
- </section>
+</section>
+
 
   <footer class="footer">
-    <p>&copy; 2026 VL LOGISTICS. Tous droits réservés.</p>
+    <p>&copy; 2026 VL GroupExpress. Tous droits réservés.</p>
   </footer>
 
   <script src="script.js"></script>
