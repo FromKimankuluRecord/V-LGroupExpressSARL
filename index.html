@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V&L GroupExpress SARL</title>
+    <!-- Vérifiez bien la majuscule si votre fichier s'appelle Styles.css -->
+    <link rel="stylesheet" href="style.css"> 
+    
+    <!-- Lien FontAwesome stable et propre -->
+    <link rel="stylesheet" href="https://cloudflare.com" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    
+    <!-- Barre de Navigation -->
+     <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><span>V&LGroupExpress</span> SARL</a>
+             <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Nos Services</a></li>
+                <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="#contact" class="btn-nav">Demander un Devis</a></li>
+             </ul>
+             <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+             </div>
+        </div>
+    </nav>
+
+    <!-- Section hero / Accueil --> 
+     <header id="accueil" class="hero-section">
+        <div class="hero-content">
+            <h1>Sourcing Premium & Logistique sans frontières</h1>
+             <p>De l'achat exclusif au transport international, nous gérons l'ensemble de votre chaîne d'approvisionnement globale.</p>
+             <a href="#contact" class="btn-primary">Confier un projet</a>
+        </div>
+     </header>
+
+     <!-- Section Services avec Onglets dynamiques -->
+<section id="services" class="services-section">
+    <div class="container">
+        <h2 class="section-title">Nos Domaines d'Expertises</h2>
+        <p class="section-subtitle">Une solution clé en main de bout en bout.</p>
+
+        <div class="tabs-container">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="conciergerie"><i class="fa-solid fa-bell"></i> Conciergerie d'achat</button>
+                <button class="tab-btn" data-tab="sourcing"><i class="fa-solid fa-magnifying-glass"></i> Sourcing</button>
+                <button class="tab-btn" data-tab="logistique"><i class="fa-solid fa-warehouse"></i> Logistique</button>
+                <button class="tab-btn" data-tab="transport"><i class="fa-solid fa-plane-departure"></i> Transport Int.</button>
+            </div>
+            
+            <div class="tabs-body">
+                <!-- Tabs 1 -->
+                <div class="tab-content active" id="conciergerie">
+                    <h3>Conciergerie d'Achat Dédiée</h3>
+                    <p>Nous agissons comme votre bureau d'achats privé. Qu'il s'agisse de biens de luxe, de matière premières spécifiques ou d'équipements industriels, notre équipe gère la négociation, le paiement sécurisé et l'acquisition en toute confidentialité.</p>
+                </div>
+                <!-- Tab 2 -->
+                <div class="tab-content" id="sourcing">
+                    <h3>Sourcing de Fournisseurs Internationaux</h3>
+                    <p>Identification et audit de fabricants fiables à travers le monde. Nous analysons la conformité des usines, négocions les meilleurs tarifs de gros et sécurisons vos contrats d'approvisionnement pour minimiser vos risques</p>
+                </div>
+                <!-- Tab 3 -->
+                <div class="tab-content" id="logistique">
+                    <h3>Logistique Intégrée & Stockage</h3>
+                    <p>Gestion de vos flux de marchandises : entreposage sécurisé, emballage sur mesure aux normes internationales, consolidation de fret et contrôle qualité rigoureux avant expédition définitive.</p>
+                </div>
+                <!-- Tab 4 -->
+                <div class="tab-content" id="transport">
+                    <h3>Transport International & Douane</h3>
+                    <p>Solutions de transport multimodal (maritime, Aérien, Routier). Nous prenons en charge l'ensemble des formalités douanières, les licences d'import/export et le suivi en temps réel de vos cargaisons jusqu'au dernier kilomètre.</p>
+                </div>
+            </div> <!-- 1. Ferme .tabs-body -->
+        </div> <!-- 2. Ferme .tabs-container (Doit être ici pour englober header + body) -->
+    </div> <!-- 3. Ferme .container -->
+</section> <!-- 4. Ferme la section -->
+
+<section id="a-propos" class="about-section">
+    <div class="container">
+        <h2 class="section-title">À Propos de V&L GroupExpress</h2>
+        <p class="section-subtitle">Votre partenaire de confiance en commerce globale.</p>
+
+        <div class="about-wrapper">
+                <div class="about-text">
+                    <h3>Qui sommes-nous ?</h3>
+                    <p><strong>V&L GroupExpress</strong>est une entreprise specialisée dans dans le sourcing international, la conciergerie d'achats et la gestion logistique de bout en bout. Forts de notre présence stratégique sur les axes mondiaux majeurs (Paris, Hong Kong, Casablanca), nous connectons les entreprises aux meilleurs réseaux d'approvisionnement.</p>
+
+                </div>
+
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h4>Sécurité & confidentialité</h4>
+                        <p>Vos transactions et l'identité de vos partenaires commerciaux restent totalement protégées.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-globe"></i>
+                        <h4>Réseaux International</h4>
+                        <p>Un accès direct et privilégié aux marchés industriels européens, asiatiques et africains.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Section Formulaire de Contact / Devis -->
+ <section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Discutons de votre projet</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Contactez-nous</h3>
+                <p><i class="fa-solid fa-envelope"></i> contact@global-conciergerie.com</p>
+                <p><i class="fa-solid fa-phone"></i> +33 (0)1 23 45 89</p>
+                <p><i class="fa-solid fa-location-dot"></i> Paris / Hong-Kong / Casablanca</p>
+            </div>
+            <form  id="quote-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Votre nom complet" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Votre adresse email" required>
+                </div>
+                <div class="form-group">
+                    <select id="service-needed" required>
+                        <option value="" disabled selected>Service Principal Souhaité</option>
+                        <option value="conciergerie">Conciergerie d'Achat</option>
+                        <option value="sourcing">Sourcing Fournisseur</option>
+                        <option value="logistique">Logistique & Stockage</option>
+                        <option value="transport">Transport International</option>
+                    </select>
+                </div>
+                   <form class="contact-form" id="contactForm" action="https://formspree.io/f/mrpgvvdp" method="POST">
+                    <textarea id="message" rows="5" placeholder="Détaillez vos besoins (Origine, Destination, Type de marchandise... )" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Envoyer la demande</button>
+                <div id="form-feedback" class="form-feedback"></div>
+
+            </form>
+        </div>
+    </div>
+ </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 VL LOGISTICS. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <p>&copy; 2026 VL LOGISTICS. Tous droits réservés.</p>
+  </footer>
+
+  <!-- LE CODE JAVASCRIPT INTÉGRÉ ICI -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- GESTION DES ONGLETS ---
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                button.classList.add('active');
+                
+                const tabId = button.getAttribute('data-tab');
+                const targetContent = document.getElementById(tabId);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+            });
+        });
+
+        // --- GESTION DU MENU MOBILE (CORRIGÉE) ---
+        const mobileMenuBtn = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                mobileMenuBtn.classList.toggle('is-active'); // Anime les barres en X
+            });
+
+            // Ferme le menu si on clique sur un lien (Accueil, Services...)
+            const links = navLinks.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.classList.remove('is-active');
+                });
+            });
+        }
+    });
+  </script>
+
+
+</body>
+</html>
