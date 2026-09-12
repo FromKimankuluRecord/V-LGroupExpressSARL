@@ -19,6 +19,15 @@ html {
     scroll-behavior: smooth;
 }
 
+/* AJOUTEZ LA LIGNE JUSTE ICI : */
+section { scroll-margin-top: 75px !important; }
+
+body {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
 /* 📍 COLLEZ LE CORRECTIF EXACTEMENT ICI : */
 section {
     scroll-margin-top: 75px; 
