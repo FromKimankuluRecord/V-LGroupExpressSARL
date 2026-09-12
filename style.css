@@ -267,14 +267,14 @@ body {
     background-color: var(--accent-color);
 }
 
-.about-tex p {
+.about-text p {
     font-size: 1.05rem;
     line-height: 1.7;
     color: var(--text-color);
     margin-bottom: 15px;
 }
 
-.about-tex strong {
+.about-text strong {
     color: var(--primary-color);
 }
 
